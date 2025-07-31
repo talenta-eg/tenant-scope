@@ -1,0 +1,27 @@
+{
+    "name": "skillup/tenant-scope",
+    "description": "Strong Global Scope package for Laravel multi-tenant systems",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "php": ">=8.1",
+        "illuminate/support": "^10.0|^11.0|^v12.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TenantScope\\": "src/"
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TenantScope\\Providers\\TenantServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
